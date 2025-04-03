@@ -40,6 +40,7 @@ public class DBKey extends DBConnection {
 
     public void update(Key key) {
         try {
+            conect();
             String sql = "update `key` set name = ?, room = ?, count = ?, observation = ? where id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, key.getName());

@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package co.edu.sena.examplejdbc.view;
+package com.mycompany.examplejdbc.view;
 
+import co.edu.sena.examplejdbc.view.*;
 import co.edu.sena.examplejdbc.bd.DBEmployee_Types;
 import co.edu.sena.examplejdbc.bd.model.EmployeeType;
 import co.edu.sena.examplejdbc.controllers.EmployeeController;
@@ -279,6 +280,8 @@ public class JFrameEmployeeType extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(JFrameEmployeeType.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
