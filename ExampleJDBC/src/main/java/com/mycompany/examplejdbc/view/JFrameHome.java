@@ -53,6 +53,11 @@ public class JFrameHome extends javax.swing.JFrame {
         });
 
         jButtonRecord.setText("Registro");
+        jButtonRecord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRecordActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("ADSO 2921881");
@@ -68,7 +73,6 @@ public class JFrameHome extends javax.swing.JFrame {
         });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/examplejdbc/view/img soft.jpg"))); // NOI18N
-        jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout jPanelBackgroundLayout = new javax.swing.GroupLayout(jPanelBackground);
         jPanelBackground.setLayout(jPanelBackgroundLayout);
@@ -138,19 +142,28 @@ public class JFrameHome extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonEmployeesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEmployeesActionPerformed
-        JFrameEmployee jfe = new JFrameEmployee();
-        jfe.setVisible(true);
+        JFrameEmployee view = new JFrameEmployee();
+        view.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_jButtonEmployeesActionPerformed
 
     private void jButtonEmployeeTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEmployeeTypeActionPerformed
-        JFrameEmployeeType jfet = new JFrameEmployeeType();
-        jfet.setVisible(true);
+        JFrameEmployeeType view = new JFrameEmployeeType();
+        view.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_jButtonEmployeeTypeActionPerformed
 
     private void jButtonKeysActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKeysActionPerformed
-       JFrameKey jfk = new JFrameKey();
-       jfk.setVisible(true);
+       JFrameKey view = new JFrameKey();
+       view.setVisible(true);
+       setVisible(false);
     }//GEN-LAST:event_jButtonKeysActionPerformed
+
+    private void jButtonRecordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRecordActionPerformed
+        JFrameRecord view = new JFrameRecord();
+        view .setVisible(true);
+        setVisible(false);       
+    }//GEN-LAST:event_jButtonRecordActionPerformed
 
     /**
      * @param args the command line arguments
